@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/label_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titre:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textSize="24sp"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toEndOf="@id/label_title"
+            app:layout_constraintTop_toBottomOf="@+id/label_title" />
+
+        <TextView
+            android:id="@+id/label_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:padding="16dp"
+            android:text="Description:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_text_view" />
+
+        <TextView
+            android:id="@+id/description_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_description"
+            android:padding="16dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/label_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description_text_view"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/location_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_location"
+            android:padding="16dp"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/label_jobType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titre de l'emploi:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/location_text_view"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/job_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_jobType"
+            android:padding="16dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/label_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salaire:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/job_type"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/salary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_salary"
+            android:padding="16dp"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/label_enterprise_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'entreprise:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salary_text_view"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/enterprise_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_enterprise_name"
+            android:padding="16dp"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/source_link_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterprise_name_text_view"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:autoLink="web"
+            android:linksClickable="true" />
+
+        <TextView
+            android:id="@+id/label_date_Debut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Debut:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/source_link_text_view"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_debut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_date_Debut"
+            android:padding="16dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/label_date_Fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Fin:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_debut"
+            android:padding="16dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_fin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_date_Fin"
+            android:padding="16dp"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/candidater_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Candidater"
+            app:layout_constraintTop_toBottomOf="@+id/date_fin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:onClick="onCandidaterButtonClick" />
+        <CheckBox
+            android:id="@+id/same_employer_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Même employeur"
+            app:layout_constraintTop_toBottomOf="@+id/searchSimilarJob"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/same_type_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Même type"
+            app:layout_constraintTop_toBottomOf="@+id/same_employer_check_box"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/same_location_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Même lieu"
+            app:layout_constraintTop_toBottomOf="@+id/same_type_check_box"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/searchSimilarJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offres similaires"
+            app:layout_constraintTop_toBottomOf="@+id/candidater_button"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:onClick="searchSimilarJobsButton" />
+
+
+        <Button
+            android:id="@+id/traduire_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Traduire"
+            app:layout_constraintTop_toBottomOf="@+id/same_location_check_box"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:onClick="onTraduireButtonClick" />
+
+        <Button
+            android:id="@+id/enregistrer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            app:layout_constraintTop_toBottomOf="@+id/traduire_button"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:onClick="onEnregistrerButtonClick" />
+
+
+<!--        <Button-->
+<!--            android:id="@+id/partagerTwitter"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="partagerTwitter"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/chercher_button"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:onClick="onPartagerButtonClick" />-->
+<!--        <Button-->
+<!--            android:id="@+id/partagerWhatsApp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="partagerWhatsApp"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/partagerTwitter"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:onClick="onPartagerButtonClick" />-->
+<!--        <Button-->
+<!--            android:id="@+id/PartagerMAil"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="PartagerMAil"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/partagerWhatsApp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:onClick="onPartagerButtonClick" />-->
+        <Button
+            android:id="@+id/Partager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partager"
+            app:layout_constraintTop_toBottomOf="@+id/enregistrer_button"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:onClick="onPartagerButtonClick" />
+        <Button
+            android:id="@+id/Appeler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appeler"
+            app:layout_constraintTop_toBottomOf="@+id/Partager"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:onClick="onPartagerButtonClick" />
+        <Button
+            android:id="@+id/envoyer_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Envoyer un mail"
+            app:layout_constraintTop_toBottomOf="@+id/Appeler"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+             />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

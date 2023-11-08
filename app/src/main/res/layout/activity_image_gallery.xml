@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:src="@drawable/image1" />
+
+    <Button
+        android:id="@+id/buttonPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:text="Précédent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/buttonPrevious"
+        android:layout_toStartOf="@id/buttonNext"
+        android:text="Valider"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Suivant"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/labelUserNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prénom:"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelUserSurnameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom:"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/userSurnameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelEnterpriseNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entreprise:"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/enterpriseNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelJobTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titre du poste:"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/jobTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelJobDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description du poste:"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/jobDescriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelJobTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type du poste:"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/jobTypeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/labelLocationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adresse:"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/labelCVTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CV:"
+            android:textStyle="bold"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/cvTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:autoLink="web" />
+
+        <Button
+            android:id="@+id/Appeler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appeler" />
+        <Button
+            android:id="@+id/Signaler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signaler" />
+
+    </LinearLayout>
+
+</ScrollView>

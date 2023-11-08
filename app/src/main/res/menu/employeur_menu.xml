@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/logout" android:title="Se Déconnecter"></item>
+    <item android:id="@+id/addjobOffer" android:title="Ajouter une Offre"></item>
+    <item android:id="@+id/modifiProfil" android:title=" modifier mon profil"></item>
+    <item android:id="@+id/checkOffers" android:title="Offres"></item>
+    <item android:id="@+id/evaluate" android:title="Evaluer les Candidatures"></item>
+    <item android:id="@+id/profil" android:title="Mon Profil"></item>
+    <item android:id="@+id/chat" android:title="chat"></item>
+
+
+</menu>

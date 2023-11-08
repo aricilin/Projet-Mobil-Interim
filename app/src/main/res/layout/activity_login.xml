@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/username_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adresse Mail"
+        />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de Passe"
+        android:inputType="textPassword" />
+
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connexion"
+        android:onClick="login" />
+
+    <Button
+        android:id="@+id/inscriptionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createAccount"
+        android:text="Créer un compte" />
+    <Button
+        android:id="@+id/Anonyme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="resteAnonyme"
+        android:text="rester Anonyme" />
+
+
+</LinearLayout>

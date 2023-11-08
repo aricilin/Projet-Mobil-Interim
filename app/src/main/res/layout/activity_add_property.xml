@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Prenom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_text_view"
+            android:layout_marginTop="8dp"
+            android:hint="Entrz votre prénom"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/surname_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_edit_text"
+            android:layout_marginTop="16dp"
+            android:text="Nom"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/surname_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/surname_text_view"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre nom"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/nationality_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/surname_edit_text"
+            android:layout_marginTop="16dp"
+            android:text="Nationalité"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/nationality_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nationality_text_view"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre nationalité"
+            android:inputType="text" />
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/phone_number_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nationality_edit_text"
+            android:layout_marginTop="16dp"
+            android:text="Numéro de téléphone"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/phone_number_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_number_text_view"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre numéro de téléphone"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/birthdate_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_number_edit_text"
+            android:layout_marginTop="16dp"
+            android:text="Date de naissance"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/birthdate_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/birthdate_text_view"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre date de naissance"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/location_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/birthdate_edit_text"
+            android:layout_marginTop="16dp"
+            android:text="Adresse"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/location_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_text_view"
+            android:layout_marginTop="8dp"
+            android:hint="Entrez votre Adresse"
+            android:inputType="textPostalAddress" />
+
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/cv_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_edit_text"
+            android:layout_marginTop="16dp"
+            android:text="CV"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/upload_cv_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_text_view"
+            android:text="Upload CV" />
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/comments_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upload_cv_button"
+            android:layout_marginTop="16dp"
+            android:text="Commentaire"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/comments_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comments_text_view"
+            android:layout_marginTop="8dp"
+            android:hint="Ajouter un commentaire"
+            android:inputType="textMultiLine" />
+        <RadioGroup
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/profile_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comments_edit_text"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/chercheur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="chercheur d'emploi" />
+
+            <RadioButton
+                android:id="@+id/Employeur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Employeur" />
+
+            <RadioButton
+                android:id="@+id/Gestionnaire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agence interim" />
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profile_radio_group"
+            android:layout_marginTop="24dp"
+            android:text="Enregistrer"
+            android:textSize="18sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:background="@color/teal_700" />
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
+

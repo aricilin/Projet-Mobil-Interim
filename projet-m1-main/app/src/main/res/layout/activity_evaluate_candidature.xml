@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserApplicationsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+
+            android:id="@+id/candidatureSearchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Titre"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@android:drawable/editbox_background"/>
+
+        <Button
+            android:id="@+id/candidatureSearchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chercher"
+            android:layout_marginStart="8dp"
+            android:textColor="@android:color/white"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearSearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

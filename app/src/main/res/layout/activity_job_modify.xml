@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titre de l'emploi:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/job_title_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Titre de l'emploi"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_label" />
+
+    <TextView
+        android:id="@+id/description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description de l'emploi:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/job_title_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/job_description_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Description de l'emploi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/description_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/location_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/job_description_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/location_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Adresse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/salary_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salaire:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/salary_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Salaire"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/salary_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/enterprise_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom de l'entreprise:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/salary_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/enterprise_name_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nom de l'entreprise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterprise_name_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/job_type_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type de l'emploi:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterprise_name_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/job_type_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Type de l'emploi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/job_type_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/date_debut_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de début:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/job_type_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/date_debut_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date de début"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_debut_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="date"/>
+
+    <TextView
+        android:id="@+id/date_fin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date de fin:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_debut_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/date_fin_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date de fin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_fin_label"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enregistrer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_fin_edit_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

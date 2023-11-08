@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AddJobOffer">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="310dp"
+            android:layout_height="189dp"
+            android:layout_marginTop="8dp"
+            android:onClick="selectLogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/titletext"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:hint="Titre du poste"
+            app:layout_constraintEnd_toEndOf="@+id/descriptionText"
+            app:layout_constraintStart_toStartOf="@+id/descriptionText"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/descriptionText"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:hint="Desccription du poste"
+            app:layout_constraintEnd_toEndOf="@+id/location_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/location_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/titletext" />
+
+        <EditText
+            android:id="@+id/location_edit_text"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:hint="Localisation"
+            app:layout_constraintEnd_toEndOf="@+id/estimated_salary_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/estimated_salary_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+        <EditText
+            android:id="@+id/estimated_salary_edit_text"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:hint="Salaire"
+            app:layout_constraintEnd_toEndOf="@+id/enterprise_name_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/enterprise_name_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/location_edit_text" />
+
+        <EditText
+            android:id="@+id/enterprise_name_edit_text"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:hint="Nom de l'entreprise"
+            app:layout_constraintEnd_toEndOf="@+id/job_type_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/job_type_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/estimated_salary_edit_text" />
+
+        <EditText
+            android:id="@+id/job_type_edit_text"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:hint="type de l'emploi"
+            app:layout_constraintEnd_toEndOf="@+id/application_deadline_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/application_deadline_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/enterprise_name_edit_text" />
+
+        <EditText
+            android:id="@+id/date_debut_edit_text"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:hint="Date début emploi"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="@+id/link"
+            app:layout_constraintStart_toStartOf="@+id/link"
+            app:layout_constraintTop_toBottomOf="@+id/job_type_edit_text" />
+
+        <EditText
+            android:id="@+id/application_deadline_edit_text"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:hint="Date fin emploi"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="@+id/link"
+            app:layout_constraintStart_toStartOf="@+id/link"
+            app:layout_constraintTop_toBottomOf="@+id/date_debut_edit_text" />
+
+
+        <EditText
+            android:id="@+id/link"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:hint="Lien"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintStart_toStartOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/application_deadline_edit_text" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="310dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:onClick="addOffer"
+            android:text="Ajouter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/link" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

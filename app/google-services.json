@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "846768980342",
+    "project_id": "mobilinterim",
+    "storage_bucket": "mobilinterim.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846768980342:android:66cdef0405d1c995953a57",
+        "android_client_info": {
+          "package_name": "com.aricilingiroglu.interimproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846768980342-6vn0nga4n9668d0heg0oq1d9ua29nv9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArDR5z4PUjl_qEKWc_oCXaXkrAaUhXoa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846768980342-6vn0nga4n9668d0heg0oq1d9ua29nv9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

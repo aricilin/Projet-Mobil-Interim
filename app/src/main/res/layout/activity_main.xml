@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue sur l'application !"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/first_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue sur InterimProject ! \n\nQue vous soyez une entreprise à la recherche de talents exceptionnels ou un candidat en quête de nouvelles opportunités, notre plateforme est là pour vous aider à atteindre vos objectifs.\n\nExplorez nos fonctionnalités avancées, créez des offres attrayantes et découvrez des profils talentueux.\n\nLaissez-nous vous aider à établir des connexions fructueuses et à construire un avenir professionnel brillant !"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

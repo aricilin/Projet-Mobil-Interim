@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/logout" android:title="Se déconnecter"></item>
+    <item android:id="@+id/checkOffers" android:title="Offres"></item>
+    <item android:id="@+id/chat" android:title="Chat"></item>
+    <item android:id="@+id/onay" android:title="pending"></item>
+    <item android:id="@+id/reportedUser" android:title="reportedUsers"></item>
+    <item android:id="@+id/profil" android:title="Mon Profil"></item>
+
+
+
+</menu>
